@@ -92,7 +92,7 @@ class Preference(models.Model):
     # Doc says it's a UUID. It's not.
     mp_id = models.CharField(
         _("mercadopago id"),
-        max_length=46,
+        max_length=250,
         null=True,
         help_text=_("The id MercadoPago has assigned for this Preference"),
     )
