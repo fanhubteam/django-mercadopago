@@ -368,7 +368,7 @@ class Payment(models.Model):
     )
     status_detail = models.CharField(
         _("status detail"),
-        max_length=32,
+        max_length=250,
     )
 
     created = models.DateTimeField(
